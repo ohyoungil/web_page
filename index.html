@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오영일 포트폴리오</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0a14441910.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">
+      <span class="banner-title">지금 바로 연락주세요</span>
+      <button class="banner-btn"><i class="far fa-times-circle"></i></button>
+    </div>
+    <header id="home" class="header">
+      <ul class="header-lists">
+        <li class="header-list">
+          <button class="header-btn">
+            <span>HTML</span>
+            <i class="fab fa-html5"></i>
+            <span class="header-btn__line">|</span>
+          </button>
+        </li>
+        <li class="header-list">
+          <button class="header-btn">
+            <span>CSS</span>
+            <i class="fab fa-css3-alt"></i>
+            <span class="header-btn__line">|</span>
+          </button>
+        </li>
+        <li class="header-list">
+          <button class="header-btn">
+            <span>JavaScript</span>
+            <i class="fab fa-js"></i>
+            <span class="header-btn__line">|</span>
+          </button>
+        </li>
+        <li class="header-list">
+          <button class="header-btn">
+            <span>React</span>
+            <i class="fab fa-react"></i>
+            <span class="header-btn__line">|</span>
+          </button>
+        </li>
+        <li class="header-list">
+          <button class="header-btn">
+            <span>Git</span>
+            <i class="fab fa-github"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="header-line"></div>
+    </header>
+    <nav id="nav" class="nav">
+      <div class="nav-title">
+        <i class="fab fa-hive"></i>
+        <span class="nav-name">portfolio</span>
+      </div>
+      <div class="nav-menu">
+      <ul class="nav-lists">
+        <li class="nav-list">
+          <button class="nav-btn" data-link="#home">홈</button>
+        </li>
+        <li class="nav-list">
+          <button class="nav-btn" data-link="#skills">프로그램&스킬</button>
+        </li>
+        <li class="nav-list">
+          <button class="nav-btn" data-link="#works">작업물</button>
+        </li>
+        <li class="nav-list">
+          <button class="nav-btn" data-link="#myself">자기소개</button>
+        </li>
+        <li class="nav-list">
+          <button class="nav-btn" data-link="#contact">연락하기</button>
+        </li>
+      </ul>
+      <button class="nav-bar">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    </nav>
+    <section class="content-bg">
+      <div class="bg-container">
+        <img src="imgs/make everything.png" alt="bg">
+        <button class="bg-btn">작업물 보기</button>
+      </div>
+    </section>
+    <content id="skills" class="skills">
+      <h1 class="skills-title">프로그램&스킬</h1>
+      <div class="skills-container">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <span class="skill-text">HTML5</span>
+          <div class="skill-per">
+            <div class="skill-value">
+              <span>HTML5</span>
+              <span>90%</span>
+            </div>
+          <div class="skill-line">
+            <div class="skill-line__html"></div>
+          </div>
+        </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <span class="skill-text">CSS3</span>
+          <div class="skill-per">
+            <div class="skill-value">
+              <span>CSS3</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-line">
+              <div class="skill-line__css"></div>
+          </div>
+        </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js"></i>
+          <span class="skill-text">JavaScript</span>
+          <div class="skill-per">
+            <div class="skill-value">
+              <span>JavaScript</span>
+              <span>80%</span>
+            </div>
+          <div class="skill-line">
+            <div class="skill-line__js"></div>
+          </div>
+        </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-react"></i>
+          <span class="skill-text">React</span>
+          <div class="skill-per">
+            <div class="skill-value">
+              <span>React</span>
+              <span>70%</span>
+            </div>
+          <div class="skill-line">
+            <div class="skill-line__react"></div>
+          </div>
+        </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-github"></i>
+          <span class="skill-text">Git</span>
+        </div>
+        </div>
+      </div>
+    </content>
+    <section id="works" class="works">
+      <h1 class="works-title">작품들</h1>
+      <ul class="works-sort">
+        <li class="work-sort__item">
+          <button class="item-btn select">
+            <span data-link=".all">All</span>
+          </button>
+        </li>
+        <li class="work-sort__item">
+          <button class="item-btn">
+            <span data-link=".htmlCss">HTML&CSS</span>
+          </button>
+        </li>
+        <li class="work-sort__item">
+          <button class="item-btn" >
+            <span data-link=".js">JavaScript</span>
+          </button>
+        </li>
+        <li class="work-sort__item">
+          <button class="item-btn" >
+            <span data-link=".react">React</span>
+          </button>
+        </li>
+      </ul>
+      <div class="works-container">
+        <div class="work one">
+          <img src="imgs/kakao.png" alt="카카오">
+          <div class="work-hide">
+            <span class="work-text">생각해봐</span>
+          </div>
+        </div>
+        <div class="work two">
+          <img src="imgs/YouTuBeBasic.png" alt="youtube">
+          <div class="work-hide">
+            <span class="work-text">생각해봐</span>
+          </div>
+        </div>
+        <div class="work three">
+          <img src="imgs/미니게임.png" alt="미니게임">
+          <div class="work-hide">
+            <span class="work-text">생각해봐</span>
+          </div>
+        </div>
+        <div class="work four">
+          <img src="imgs/소고기마켓.png" alt="소고기마켓">
+          <div class="work-hide">
+            <span class="work-text">생각해봐</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="myself" class="myself">
+      <h1 class="myself-title">자기소개</h1>
+      <div class="myself-container">
+          <div class="myself-img">
+            <img src="imgs/증명사진.png" alt="증명사진">
+          </div>
+          <div class="myself-text">
+            <span class="myself-text__title">열정가득한 프로그래머</span>
+            <p>내용</p>
+          </div>
+      </div>
+    </section>
+    <footer id="contact" class="contact">
+      <h1 class="contact-title">연락하기</h1>
+      <div class="contact-container">
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>010 5522 0315</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>서울시 영등포구</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>oyi00111@gmail.com</span>
+        </div>
+        <div class="contact-item active">
+          <i class="fas fa-globe"></i>
+          <a href="https://ohyoungil.github.io/WEB-PAGE" target="_blank">https://ohyoungil.github.io/WEB-PAGE</a>
+        </div>
+      </div>
+      <div class="arrow">
+        <button class="arrow-btn"><i class="fas fa-arrow-up"></i></button>
+      </div>
+    </footer>
+  </body>
+</html>

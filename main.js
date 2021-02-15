@@ -46,13 +46,6 @@ function scrollInto(selector) {
   ScrollTo.scrollIntoView({behavior: "smooth"});
 }
 
-// nav-bar
-const navBar = document.querySelector('.nav-bar');
-
-navBar.addEventListener('click', () => {
-  
-})
-
 
 // scroll-fadein
 const bgContainer = document.querySelector('.content-bg');
@@ -89,11 +82,16 @@ window.addEventListener('scroll', arrowHide)
 
 
   const workSort = document.querySelector(".works-sort");
+  const worksContainer = document.querySelector(".works-container");
   const works = document.querySelectorAll('.work');
   const one = document.querySelector('.one');
   const two = document.querySelector('.two');
   const three = document.querySelector('.three');
   const four = document.querySelector('.four');
+  const all = document.querySelector('.all');
+  const htmlCss = document.querySelector('.htmlCss');
+  const js = document.querySelector('.js');
+  const react = document.querySelector('.react');
 
   workSort.addEventListener('click', (event) => {
     const workTarget = event.target;
@@ -101,10 +99,12 @@ window.addEventListener('scroll', arrowHide)
     if (workLink == null) {
       return;
     }
-    console.log(workLink);
     
     if (workLink == ".all") {
-      console.log(works);
+      all.classList.add('select');
+      htmlCss.classList.remove('select');
+      js.classList.remove('select');
+      react.classList.remove('select');
       for(i = 0; i <works.length; i++) {
       works[i].style.display = "block";
       }
@@ -112,6 +112,10 @@ window.addEventListener('scroll', arrowHide)
     }
 
     if(workLink == ".htmlCss") {
+      all.classList.remove('select');
+      htmlCss.classList.add('select');
+      js.classList.remove('select');
+      react.classList.remove('select');
       for(i = 0; i <works.length; i++) {
         works[i].style.display = "none";
       }
@@ -121,6 +125,10 @@ window.addEventListener('scroll', arrowHide)
     } 
 
     if(workLink == ".js") {
+      all.classList.remove('select');
+      htmlCss.classList.remove('select');
+      js.classList.add('select');
+      react.classList.remove('select');
       for(i = 0; i <works.length; i++) {
         works[i].style.display = "none";
       }
@@ -129,6 +137,10 @@ window.addEventListener('scroll', arrowHide)
     } 
 
     if(workLink == ".react") {
+      all.classList.remove('select');
+      htmlCss.classList.remove('select');
+      js.classList.remove('select');
+      react.classList.add('select');
       for(i = 0; i <works.length; i++) {
         works[i].style.display = "none";
       }

@@ -82,7 +82,7 @@ body {
 }
 
 .header-btn {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 0.5rem 0.8rem;
   margin-right: 2rem;
   display: flex;
@@ -100,7 +100,7 @@ body {
 /* nav */
 .nav {
   width: 100%;
-  height: 5rem;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -284,21 +284,21 @@ body {
 }
 
 .works-container {
-  display: grid;
-  height: 100rem;
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
   margin: 3rem 2rem;
-  grid-template-columns: (2, 1fr);
-  grid-template-rows: (2, 1fr);
-  grid-template:
-    "work work"
-    "work work";
+  margin: auto;
 }
 
 .work {
+  width: 450px;
+  height: 350px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: var(--gray-light-color);
   position: relative;
-  transition: 500ms ease-in;
+  transition: 600ms ease-in;
 }
 
 .work img {
@@ -336,7 +336,7 @@ body {
 /* myself */
 .myself {
   width: 100%;
-  background-color: var(--gray-light-color);
+  background-color: #f1f2f6;
   margin-top: 17rem;
 }
 
@@ -369,7 +369,6 @@ body {
 
 .myself-text {
   width: 97%;
-  height: 40rem;
   background-color: var(--white-color);
   margin: 3rem;
   border-radius: 2rem;
@@ -382,15 +381,15 @@ body {
 }
 
 .myself-text p {
-  padding: 2rem 2rem;
-  font-size: 1.6rem;
+  padding: 2.5rem 2rem;
+  font-size: 2rem;
 }
 
 /* contact */
 .contact {
   width: 100%;
   height: 35rem;
-  background-color: var(--gray-light-color);
+  background-color: #f1f2f6;
 }
 
 .contact-title {
@@ -455,24 +454,6 @@ body {
   html {
     font-size: 8px;
   }
-}
-
-@media screen and (min-width: 870px) and (max-width: 1024px) {
-  html {
-    font-size: 7px;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  html {
-    font-size: 6px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  html {
-    font-size: 5px;
-  }
 
   /* header */
 
@@ -493,13 +474,9 @@ body {
   }
 
   .nav-lists {
-    display: none;
+    margin-right: 20px;
   }
 
-  .nav-bar {
-    display: block;
-    padding-right: 2rem;
-  }
   /* content-bg */
 
   .bg-btn {
@@ -522,7 +499,7 @@ body {
 
   .skills-container {
     display: grid;
-    width: 60%;
+    width: 50%;
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: (5, 1fr);
@@ -583,33 +560,18 @@ body {
   }
 
   .works-container {
-    display: grid;
-    width: 60%;
-    height: 100rem;
-    gap: 2rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: (4, 1fr);
-    grid-template:
-      "work"
-      "work"
-      "work"
-      "work";
+    width: 50%;
+    display: flex;
+    flex-direction: column;
   }
 
   .work {
     width: 100%;
     background-color: var(--gray-light-color);
-    position: relative;
-    display: flex;
-    justify-content: center;
   }
 
   .work img {
     width: 100%;
     height: 100%;
   }
-
-  /* myself */
-
-  /* contact */
 }

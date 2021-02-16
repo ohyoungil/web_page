@@ -326,6 +326,7 @@ body {
 .work-text {
   color: var(--white-color);
   font-size: 2rem;
+  z-index: 3;
 }
 
 .select {
@@ -381,6 +382,7 @@ body {
 }
 
 .myself-text p {
+  color: var(--black-light-color);
   padding: 2.5rem 2rem;
   font-size: 2rem;
 }
